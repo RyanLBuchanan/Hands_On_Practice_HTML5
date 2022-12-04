@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Practice with Tables</title>
+<meta charset="utf-8">
+</head>
+<body>
+<table border="1">
+  <tr>
+    <td>
+      School Attended
+    </td>
+    <td>
+      Years
+    </td>
+    <td>
+      Degree Awarded
+    </td>
+    <td>
+      Emphasis
+    </td>
+  </tr>
+    <tr>
+      <td>
+        University of Utah
+      </td>
+      <td>
+        2016--2018
+      </td>
+      <td>
+        Masters of Education
+      </td>
+      <td>
+        Instructional Design and Education Technology
+      </td>
+    </tr>
+      <tr>
+        <td>
+          Western Governors University
+        </td>
+        <td>
+          2020--2022
+        </td>
+        <td>
+          Masters of Science
+        </td>
+        <td>
+          Data Analytics and Machine Learning
+        </td>
+      </tr>
+</table>
+</body>
+</html>
