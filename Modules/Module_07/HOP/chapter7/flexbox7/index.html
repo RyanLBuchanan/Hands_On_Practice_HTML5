@@ -87,6 +87,23 @@
       padding: 2.5%;
     }
 
+    #demo {
+      display: flex;
+      flex-direction: row;
+    }
+
+    nav {
+      flex: 1;
+    }
+
+    main {
+      flex: 7;
+    }
+
+    aside {
+      flex: 2;
+    }
+
     @media only screen and (max-width: 1024px) {
       body {
         margin: 0;
@@ -128,25 +145,14 @@
     figure,
     figcaption {
       display: block;
-
-      nav { order: 1; }
-
-nav ul { flex-wrap: wrap; }
-
     }
-
-
 
     nav {
-      flex: 1;
+      order: 1;
     }
 
-    main {
-      flex: 7;
-    }
-
-    aside {
-      flex: 2;
+    nav ul {
+      flex-wrap: wrap;
     }
   </style>
 </head>
@@ -183,7 +189,7 @@ nav ul { flex-wrap: wrap; }
         <p>Casita Sedona offers a free guided hike each week for guests. Explore the Seven Sacred Pools along the Soldiers Pass Trail.</p>
       </aside>
     </div> <!-- end of flex container -->
-    <footer>Copyright &copy; 2018
+    <footer>Copyright &copy; 2022
     </footer>
   </div>
 </body>

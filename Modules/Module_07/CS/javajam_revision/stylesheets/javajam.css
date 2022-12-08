@@ -156,7 +156,7 @@ header, nav, main, footer {
   }
 
   header {
-    border: 5px solid #FEF6C2;
+    border-bottom: 5px solid #FEF6C2;
   }
 
   h1 {
@@ -177,6 +177,7 @@ header, nav, main, footer {
 
   nav li {
     display: inline-block;
+    padding: 0.5em;
   }
 
   nav a {
@@ -189,6 +190,7 @@ header, nav, main, footer {
   nav ul {
     padding: 0;
     margin: 0;
+    text-align: center;
   }
 
   #heroroad, #heromugs, #heroguitar {
@@ -197,7 +199,6 @@ header, nav, main, footer {
   }
 
   main {
-    padding: 0;
     margin: 0;
     font-size: 90%;
   }
@@ -223,7 +224,7 @@ header, nav, main, footer {
     display: block;
     padding: 0.2em;
     width: auto;
-    border-bottom: 1px solid #FEF6C2;
+    border-bottom: 1px ridge #FEF6C2;
   }
 
   nav li {
@@ -235,7 +236,10 @@ header, nav, main, footer {
   }
 
   h2 {
-    padding: 0.5em 0 0 0.5em;
+    padding-top: 0.5em;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0.5em;
     margin-right: 0.5em;
   }
 
@@ -262,35 +266,3 @@ header, nav, main, footer {
     display: none;
   }
 }
-
-/* @media only screen and (max-width: 768px) {
-
-      h1,
-      h2 {
-        font-size: 100%;
-      }
-
-      p {
-        font-size: 90%;
-      }
-
-      figure {
-        display: none;
-      }
-
-      nav,
-      nav ul,
-      nav li {
-        padding: 0;
-      }
-
-      nav li {
-        display: block;
-      }
-
-      nav a {
-        display: block;
-        padding: 0.5em 0;
-        border-bottom: 2px ridge #00005D;
-      }
-    } */
