@@ -193,7 +193,7 @@ header, nav, main, footer {
     margin: 0;
   }
 
-  #heroroad, #heromugs, #heroguitar {
+  #heroroad, #heromugs, #heroguitar, #herojobs {
     margin: 0;
     padding: 0;
   }
@@ -265,6 +265,10 @@ header, nav, main, footer {
   #desktop {
     display: none;
   }
+
+   #herojobs {
+     display: none;
+   }
 }
 
 table {
@@ -281,4 +285,31 @@ th {
 
 tr:nth-of-type(odd) {
   background-color: #D2B48C
+}
+
+form {
+  padding: 2em;
+}
+
+label {
+  float: left;
+  display: block;
+  text-align: right;
+  width: 8em;
+  padding-right: 1em;
+}
+
+input, textarea {
+  display: block;
+  margin-bottom: 1em;
+}
+
+#mySubmit {
+  margin-left: 9.5em;
+}
+
+#herojobs {
+height: 250px;
+background-image: url('../assets/herojobs.jpg');
+background-size: 100% 100%;
 }
