@@ -12,14 +12,13 @@
 
     #gallery {
       position: relative;
-
     }
 
     figure {
       position: absolute;
       left: 280px;
       text-align: center;
-      opacity: 0.25;
+      opacity: .25;
     }
 
     #gallery ul {
@@ -27,14 +26,35 @@
       list-style-type: none;
     }
 
-    #gallery ul li {
+    #gallery li {
       display: inline;
       float: left;
       padding: 10px;
     }
 
     #gallery img {
-      border: none;
+      border-style: none;
+    }
+
+    #gallery a {
+      color: #eaeaea;
+      text-decoration: none;
+      font-style: italic;
+    }
+
+    #gallery span {
+      position: absolute;
+      left: -1000px;
+      opacity: 0;
+      transition: opacity 3s ease-in-out;
+    }
+
+    #gallery a:hover span {
+      position: absolute;
+      top: 16px;
+      left: 320px;
+      text-align: center;
+      opacity: 1;
     }
   </style>
 </head>
@@ -43,10 +63,8 @@
   <h1>Image Gallery</h1>
   <div id="gallery">
     <figure>
-      <img id="placeholder" src="photo1.jpg" width="" height="" alt="Image">
-      <figcaption>
-        Placeholder Image
-      </figcaption>
+      <img src="photo1.jpg" width="400" height="300" alt="Golden Gate Bridge">
+    </figure>
       <ul>
         <li><a href="photo1.jpg"><img src="photo1thumb.jpg" width="100" height="75" alt="Golden Gate Bridge">
             <span><img src="photo1.jpg" width="400" height="300" alt="Golden Gate Bridge"><br>Golden Gate Bridge</span></a>
@@ -67,7 +85,6 @@
             <span><img src="photo6.jpg" width="400" height="300" alt="Sea Sunset"><br>Sea Sunset</span></a>
         </li>
       </ul>
-    </figure>
   </div>
 </body>
 
