@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Image Gallery</title>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background-color: #333333;
+      color: #eaeaea;
+    }
+
+    #gallery {
+      width: 800px;
+    }
+
+    #gallery ul {
+      width: 300px;
+      list-style-type: none;
+      float: left;
+    }
+
+    #gallery li {
+      display: inline;
+      float: left;
+      padding: 16px;
+    }
+
+    #gallery img {
+      border: none;
+    }
+
+    figure {
+      padding-top: 30px;
+      text-align: center;
+    }
+
+    figcaption {
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+  </style>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      $('#gallery a').click(function() {
+        var galleryHref = $(this).attr('href');
+        var galleryAlt = $(this).attr('title');
+        $('figure').css('display','none');
+        $('figure img').attr({ src: galleryHref, alt: galleryAlt });
+        $('figcaption').html(galleryAlt);
+        $('figure').fadeToggle(1000);
+        return false;
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <h1>Image Gallery</h1>
+  <div id="gallery">
+    <ul>
+      <li>
+        <a href="photo1.jpg" title="Golden Gate Bridge"><img src="photo1thumb.jpg" width="100" height="75" alt="Golden
+        Gate Bridge"></a>
+      </li>
+      <li>
+        <a href="photo2.jpg" title="Sea Rocks"><img src="photo2thumb.jpg" width="100" height="75" alt="Sea Rocks"></a>
+      </li>
+      <li>
+        <a href="photo3.jpg" title="Big Sur"><img src="photo3thumb.jpg" width="100" height="75" alt="Big Sur"></a>
+      </li>
+      <li>
+        <a href="photo4.jpg" title="Sea Cove"><img src="photo4thumb.jpg" width="100" height="75" alt="Sea Cove"></a>
+      </li>
+      <li>
+        <a href="photo5.jpg" title="Sea Waves"><img src="photo5thumb.jpg" width="100" height="75" alt="Sea Waves"></a>
+      </li>
+      <li>
+        <a href="photo6.jpg" title="Sea Sunset"><img src="photo6thumb.jpg" width="100" height="75" alt="Sea Sunset"></a>
+      </li>
+    </ul>
+    <figure>
+      <img src="photo1.jpg" alt="large gallery image">
+      <figcaption>
+        Golden Gate Bridge
+      </figcaption>
+    </figure>
+  </div>
+</body>
+
+</html>

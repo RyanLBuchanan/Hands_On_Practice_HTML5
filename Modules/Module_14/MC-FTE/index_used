@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JavaScript Practice</title>
+<meta charset="utf-8">
+
+619
+<script>
+function validateForm() {
+if (document.forms[0].userName.value == "" ) {
+ aert("Name field cannot be empty.");
+ return false;
+} // end if
+aert("Name and age are valid.");
+return true;
+} // end function validateForm
+</script>
+</head>
+<body>
+<h1>JavaScript Form Handling</h1>
+<form method="post"
+action="http://webdevbasics.net/scripts/demo.php"
+ onsubmit="return validateUser();">
+ <label>Name: <input type="text" name="userName"></label>
+ <br>
+ <input type="submit" value="Send information">
+</form>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>JavaScript Practice</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <h1>Using JavaScript</h1>
+  <script>
+    var userSong;
+    userSong = prompt("Please enter your favorite song title.");
+    document.write("Your favorite song is: ", userSong);
+  </script>
+</body>
+
+</html> -->

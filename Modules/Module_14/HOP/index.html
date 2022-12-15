@@ -2,24 +2,35 @@
 <html lang="en">
 
 <head>
-  <title>JavaScript Practice</title>
+  <title>jQuery Toggle Practice</title>
   <meta charset="utf-8">
+  <style>
+    #details {
+      display: none;
+    }
+  </style>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+  </script>
   <script>
-    function promptQuantity() {
-      var quantity;
-      quantity = prompt("Please type a quantity greater than 0");
-      if (quantity <= 0) {
-        alert("Quantity is not greater than 0.");
-      } else {
-        alert("Thank you for entering a quantity greater than 0.");
-      } // end if
-    } // end function promptQuantity
+    $(document).ready(function() {
+      $('#more').click(function() {
+        $('#details').toggle();
+      });
+    });
   </script>
 </head>
+
 <body>
-  <h1>Using JavaScript</h1>
-  <input type="button" value="Click to enter quantity" onclick="promptQuantity();">
-  </h2>
+  <h1>jQuery</h1>
+  <p>Many websites, including Amazon and Google, use jQuery, to provide
+    interaction and dynamic effects on web pages. <a href="#" id="more">More</a></p>
+  <div id="details">
+    <p>The jQuery API (application programming
+      interface) works along with JavaScript and provides easy ways to
+      dynamically manipulate the CSS properties of elements, detect and
+      react to events (such as mouse movements), and animate elements on a
+      web page, such as image slideshows.</p>
+  </div>
 </body>
 
 </html>
