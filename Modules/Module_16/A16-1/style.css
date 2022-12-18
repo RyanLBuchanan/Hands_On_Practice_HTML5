@@ -1,0 +1,18 @@
+#container {
+    width: 1040px;
+    margin: 0 auto;
+}
+h1 {
+    background-color:mediumslateblue;
+    color: #fff;
+}
+img {
+    width: 320px;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+figcaption {
+    text-align: center;
+}
