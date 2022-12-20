@@ -306,6 +306,14 @@ input, textarea {
   list-style-type: none;
 }
 
+.afv-images {
+  margin-left: 70px;
+  margin-bottom: 50px;
+  padding: o;
+  border: solid 1px gray;
+  box-shadow: 10px 10px 10px #DCDCDC;
+}
+
 button {
   border-style: solid #DCDCDC;
   margin-left: 70px;
