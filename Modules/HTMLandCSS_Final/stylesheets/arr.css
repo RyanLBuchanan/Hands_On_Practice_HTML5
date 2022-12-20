@@ -23,13 +23,7 @@ header {
   background-color: #D7D7D7;
   background-image: url('../images/arr-logo.png');
   background-repeat: no-repeat;
-  height: 150px;
-}
-
-#footer-nav {
-  background-color: #D7D7D7;
-  padding-left: 2em;
-  padding-right: 2em;
+  height: 100px;
 }
 
 footer {
@@ -154,6 +148,10 @@ input, textarea {
   list-style-type: none;
 }
 
+#saveherpetiles li {
+  display: inline-block;
+}
+
 #newtbackground {
   background-image: url('../images/Arr-Logo-Pattern2.gif');
   background-color: #42731F;
@@ -197,6 +195,14 @@ hr {
   white-space: nowrap;
   box-shadow: 10px 10px 10px #DCDCDC;
 }
+
+#footer-nav {
+  background-color: #D7D7D7;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+
 
 
 
