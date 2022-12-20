@@ -5,18 +5,16 @@
 main {
   background-color: #ffffff;
   padding: 0 0 2em 0;
-  margin-left: 200px;
   display: block;
 }
 
-main h2, main h3, main h4, main p, main div, main ul, main dl {
+main h2, main h3, main h4, main p, main div, main ul{
   padding-left: 3em;
   padding-right: 2em;
 }
 
 body {
-  background-color: #ffffff;
-  background-image: url('../images/arr-logo.gif');
+  background-color: #555555;
   color: #000000;
   font-family: Verdana, Helvetica;
 }
@@ -28,9 +26,10 @@ header {
   height: 150px;
 }
 
-#pre-footer {
+#footer-nav {
   background-color: #D7D7D7;
-  padding: 0;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 footer {
@@ -58,18 +57,17 @@ h4 {
   padding-left: 0.5em;
   padding-bottom: 0;
   text-transform: uppercase;
-  /* border-bottom: 2px solid #221811; */
   clear: left;
   font-family: Calendas, Times New Roman;
 }
 
 nav {
+  float: none;
+  width: auto;
   text-align: center;
   text-transform: uppercase;
   font-size: 1.5em;
   padding-top: 10px;
-  float: left;
-  width: 200px;
 }
 
 nav ul {
@@ -77,10 +75,8 @@ nav ul {
   padding-left: 0;
 }
 
-.floatleft {
-  float: left;
-  padding-right: 2em;
-  padding-bottom: 2em;
+nav li {
+  display: inline-block;
 }
 
 nav a {
@@ -106,18 +102,12 @@ nav a:hover {
   width: 80%;
   min-width: 900px;
   max-width: 1280px;
-  box-shadow: 5px 5px 5px #1e1e1e;
 }
 
 .details {
   padding-left: 20%;
   padding-right: 20%;
   overflow: auto;
-}
-
-img {
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 #slideshow1 {
@@ -130,6 +120,92 @@ img {
 header, nav, main, footer {
   display: block;
 }
+
+table {
+  margin: auto;
+  width: 90%;
+  border-spacing: 0;
+  background-color: none;
+}
+
+td,
+th {
+  padding: 10px;
+}
+
+form {
+  padding: 2em;
+}
+
+label {
+  float: left;
+  display: block;
+  text-align: right;
+  width: 8em;
+  padding-right: 1em;
+}
+
+input, textarea {
+  display: block;
+  margin-bottom: 1em;
+}
+
+#saveherpetiles ul {
+  list-style-type: none;
+}
+
+#newtbackground {
+  background-image: url('../images/Arr-Logo-Pattern2.gif');
+  background-color: #42731F;
+}
+
+#newtbackground ul {
+  background-color: #ffffff;
+  list-style-type: none;
+}
+
+.afv-images {
+  margin-left: 70px;
+  margin-bottom: 50px;
+  padding: 0;
+  border: solid 2px #555555;
+  box-shadow: 10px 10px 10px #DCDCDC;
+}
+
+.button {
+  border-style: solid #DCDCDC;
+  margin-left: 70px;
+  margin-bottom: 20px;
+  /* box-shadow: 10px 10px 10px #DCDCDC; */
+}
+
+hr {
+  width: 90%;
+}
+
+#donate-now {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: normal;
+  background-color: #42731F;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  margin-left: 130px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  white-space: nowrap;
+  box-shadow: 10px 10px 10px #DCDCDC;
+}
+
+
+
+
+
+
+
+
+/** RESPONSIVENESS **/
 
 #mobile {
   display: none;
@@ -216,7 +292,6 @@ header, nav, main, footer {
     display: block;
     padding: 0.2em;
     width: auto;
-    /* border-bottom: 1px ridge #FEF6C2; */
   }
 
   nav li {
@@ -261,80 +336,4 @@ header, nav, main, footer {
   #herojobs {
     display: none;
   }
-}
-
-table {
-  margin: auto;
-  width: 90%;
-  border-spacing: 0;
-  background-color: none;
-}
-
-td,
-th {
-  padding: 10px;
-}
-
-form {
-  padding: 2em;
-}
-
-label {
-  float: left;
-  display: block;
-  text-align: right;
-  width: 8em;
-  padding-right: 1em;
-}
-
-input, textarea {
-  display: block;
-  margin-bottom: 1em;
-}
-
-#saveherpetiles ul {
-  list-style-type: none;
-}
-
-#newtbackground {
-  background-image: url('../images/Arr-Logo-Pattern2.gif');
-  background-color: #42731F;
-}
-
-#newtbackground ul {
-  background-color: #ffffff;
-  list-style-type: none;
-}
-
-.afv-images {
-  margin-left: 70px;
-  margin-bottom: 50px;
-  padding: o;
-  border: solid 1px gray;
-  box-shadow: 10px 10px 10px #DCDCDC;
-}
-
-button {
-  border-style: solid #DCDCDC;
-  margin-left: 70px;
-  margin-bottom: 20;
-  box-shadow: 10px 10px 10px #DCDCDC;
-}
-
-hr {
-  width: 90%;
-}
-
-#donate-now {
-  color: #ffffff;
-  font-size: 40px;
-  font-weight: normal;
-  background-color: #42731F;
-  margin-right: 10px;
-  margin-bottom: 50px;
-  margin-left: 130px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  white-space: nowrap;
-  box-shadow: 10px 10px 10px #DCDCDC;
 }
