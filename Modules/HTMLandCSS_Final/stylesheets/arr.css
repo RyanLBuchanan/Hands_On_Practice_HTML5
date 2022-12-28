@@ -8,7 +8,7 @@ main {
   display: block;
 }
 
-main h2, main h3, main h4, main p, main div, main ul {
+main h2, main h3, main h4, main p, main div {
   padding-left: 3em;
   padding-right: 2em;
 }
@@ -159,28 +159,32 @@ th {
 
 .float-container {
   background-image: url('../images/Arr-Logo-Pattern2.gif');
-    padding: 20px;
-    text-align: center;
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 20px;
+    align-items: center;
 }
 
 .float-child {
-  margin-right: 50px;
     width: 150px;
     float: left;
-    padding: 50px;
+    /* padding: 50px; */
 }
 
 #recent-posts {
+  float: left;
   background-color: #ffffff;
-  width: 300px;
+  width: 330px;
   padding: 0px;
   border-radius: 15px;
   white-space: nowrap;
 }
 
 #upcoming-events {
+  float: right;
   background-color: #ffffff;
-  width: 300px;
+  width: 350px;
   padding: 0px;
   border-radius: 15px;
   white-space: nowrap;
@@ -203,6 +207,12 @@ th {
   padding: 0px;
   border: solid 1px #939799;
   box-shadow: 10px 10px 10px #DCDCDC;
+}
+
+#saveherpetiles-heading {
+  font-size: 40px;
+  font-style: normal;
+
 }
 
 .button {
