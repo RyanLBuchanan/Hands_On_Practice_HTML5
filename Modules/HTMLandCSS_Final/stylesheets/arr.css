@@ -58,13 +58,21 @@ h4 {
 }
 
 nav {
-  float: right;
   width: auto;
-  text-align: center;
+  height: 122px;
+  background: #D7D7D7;
+  overflow: auto;
   text-transform: uppercase;
   font-size: 1em;
   padding-top: 10px;
+  padding-bottom: 10px;
   font-weight: bold;
+  margin-left: 250px;
+}
+
+.logo img{
+  position: absolute;
+  background: #D7D7D7;
 }
 
 nav ul {
@@ -73,13 +81,20 @@ nav ul {
 }
 
 nav li {
+  float: left;
   display: inline-block;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 nav a {
+  text-decoration: none;
+  width: 100px;
+  display: block;
   text-decoration: none;
 }
 
