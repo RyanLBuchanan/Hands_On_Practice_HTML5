@@ -27,10 +27,12 @@ header {
 p {
   font-weight: bold;
   text-align: center;
+  padding-top: 0px;
+  padding-bottom: 35px;
 }
 
 h1 {
-  padding-top: 45px;
+  margin-bottom: 0px;
   font-size: 3em;
   font-family: Calendas, Times New Roman;
   text-align: center;
@@ -147,11 +149,47 @@ th {
 #newtbackground {
   background-image: url('../images/Arr-Logo-Pattern2.gif');
   background-color: #42731F;
+  height: 270px;
 }
 
 #newtbackground ul {
   background-color: #ffffff;
   list-style-type: none;
+}
+
+.float-container {
+  background-image: url('../images/Arr-Logo-Pattern2.gif');
+    padding: 20px;
+    text-align: center;
+}
+
+.float-child {
+  margin-right: 50px;
+    width: 150px;
+    float: left;
+    padding: 50px;
+}
+
+#recent-posts {
+  background-color: #ffffff;
+  width: 300px;
+  padding: 0px;
+  border-radius: 15px;
+  white-space: nowrap;
+}
+
+#upcoming-events {
+  background-color: #ffffff;
+  width: 300px;
+  padding: 0px;
+  border-radius: 15px;
+  white-space: nowrap;
+}
+
+.double-space {
+  line-height: 2;
+  position: relative;
+  top: -.5em;
 }
 
 .AFV {
