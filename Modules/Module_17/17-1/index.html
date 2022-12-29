@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -41,23 +41,23 @@
 		<br>
         <div class="row">
             <p>3. The middle column of this 3 column layout should take up half of the total width of the row:</p>
-            <div>
+            <div class="col">
                 Column 1
             </div>
-            <div>
+            <div class="col-6">
                 Column 2
             </div>
-            <div>
+            <div class="col">
                 Column 3
             </div>
         </div>
 		<br>
         <div class="row">
             <p>4. The 2nd column of this 2 column layout should take up exactly twice the amount of space as the 1st column:</p>
-            <div>
+            <div class="col-4">
                 Column 1
             </div>
-            <div>
+            <div class="col-8">
                 Column 2
             </div>
         </div>
@@ -69,13 +69,13 @@
                 <li>2nd column - the rest of the available space</li>
                 <li>3rd column - 6</li>
             </ul>
-            <div>
+            <div class="col-4">
                 Column 1
             </div>
-            <div>
+            <div class="col">
                 Column 2
             </div>
-            <div>
+            <div class="col-6">
                 Column 3
             </div>
         </div>
@@ -86,13 +86,13 @@
                 <li>One column layout for any breakpoints up to and including the "medium" breakpoint</li>
                 <li>Anything above "medium" will have a 3 column layout</li>
             </ul>
-            <div>
+            <div  class="col-lg-2">
                 Column 1
             </div>
-            <div>
+            <div class="col-lg-7">
                 Column 2
             </div>
-            <div>
+            <div class="col-lg-3">
                 Column 3
             </div>
         </div>
@@ -114,10 +114,10 @@
                     </ul>
                 </li>
             </ul>
-            <div>
+            <div class="col-lg-3 col-xl-9">
                 Column 1
             </div>
-            <div>
+            <div class="col-lg-9 col-xl-3">
                 Column 2
             </div>
         </div>
@@ -134,19 +134,19 @@
                     </ul>
                 </li>
             </ul>
-            <div>
+            <div class="col-lg-6 col-xl-2">
                 Column 1
             </div>
-            <div>
+            <div class="col-lg-6 col-xl-3">
                 Column 2
             </div>
-            <div>
+            <div class="col-lg-6 col-xl-7">
                 Column 3
             </div>
         </div>
     </div>
 	<br>
-    <div class="container">
+    <div class="container-fluid">
         <p>9. Modify the container class of the above div so that it will have a width that takes up the entire width of the screen</p>
         <div class="row">
             <div class="col">
@@ -161,8 +161,9 @@
         </div>
     </div>
 	<br>
-    <div>
-        <p>10. Add a container class to the above div that will make the following have a width that takes up the entire width of the screen only up to and including the "medium" breakpoint. Anything including the "large" breakpoint and above will not</p>
+    <div class="container-lg">
+        <p>10. Add a container class to the above div that will make the following have a width that takes up the entire width of the screen only up to and including the "medium" breakpoint.
+          Anything including the "large" breakpoint and above will not</p>
         <div class="row">
             <div class="col">
                 Column 1
@@ -176,4 +177,4 @@
         </div>
     </div>
 </body>
-</html> -->
+</html>
