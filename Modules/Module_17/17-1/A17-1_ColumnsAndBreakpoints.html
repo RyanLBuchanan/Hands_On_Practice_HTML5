@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+	<style>
+		.row>[class^=col] {
+			padding-top: 1em;
+			padding-bottom: 1em;
+			background-color: lavender;
+			border: 1px solid purple;
+		}
+
+		.row {
+			margin-top: 0.25em;
+		}
+
+		p, ul {
+			font-weight: bold;
+		}
+
+		ul {
+			margin-left: 30px;
+		}
+	</style>
+</head>
+<body>
+    <div>
+        <p>1. Add the correct Bootstrap class to the above div to make all of its rows contained so that they do not extend to the full width of the page</p>
+        <div class="row">
+            <p>2. Add the correct Bootstrap classes so that the columns (each div is a column) in this row take up the same amount of space:</p>
+            <div>
+                Column 1
+            </div>
+            <div>
+                Column 2
+            </div>
+        </div>
+		<br>
+        <div class="row">
+            <p>3. The middle column of this 3 column layout should take up half of the total width of the row:</p>
+            <div>
+                Column 1
+            </div>
+            <div>
+                Column 2
+            </div>
+            <div>
+                Column 3
+            </div>
+        </div>
+		<br>
+        <div class="row">
+            <p>4. The 2nd column of this 2 column layout should take up exactly twice the amount of space as the 1st column:</p>
+            <div>
+                Column 1
+            </div>
+            <div>
+                Column 2
+            </div>
+        </div>
+		<br>
+        <div class="row">
+            <p>5. This 3 column layout should have the following spacing:</p>
+            <ul>
+                <li>1st column - 4</li>
+                <li>2nd column - the rest of the available space</li>
+                <li>3rd column - 6</li>
+            </ul>
+            <div>
+                Column 1
+            </div>
+            <div>
+                Column 2
+            </div>
+            <div>
+                Column 3
+            </div>
+        </div>
+		<br>
+        <div class="row">
+            <p>6. This layout should have the following:</p>
+            <ul>
+                <li>One column layout for any breakpoints up to and including the "medium" breakpoint</li>
+                <li>Anything above "medium" will have a 3 column layout</li>
+            </ul>
+            <div>
+                Column 1
+            </div>
+            <div>
+                Column 2
+            </div>
+            <div>
+                Column 3
+            </div>
+        </div>
+		<br>
+        <div class="row">
+            <p>7. Create a multiple breakpoint layout with the following settings:</p>
+            <ul>
+                <li>Anything up to and including the "medium" breakpoint should only have one column</li>
+                <li>Anything with a "large" and above:
+                    <ul>
+                        <li>1st column takes up 3</li>
+                        <li>2nd column takes up 9</li>
+                    </ul>
+                </li>
+                <li>Anything with an "extra-large" breakpoint and above:
+                    <ul>
+                        <li>1st column takes up 9</li>
+                        <li>2nd column takes up 3</li>
+                    </ul>
+                </li>
+            </ul>
+            <div>
+                Column 1
+            </div>
+            <div>
+                Column 2
+            </div>
+        </div>
+		<br>
+        <div class="row">
+            <p>8. This layout should have the following:</p>
+            <ul>
+                <li>A two equal column layout up to and including the "large" breakpoint (the 3rd column will overflow into the next row)</li>
+                <li>Anything including the "extra-large" breakpoint and above:
+                    <ul>
+                        <li>1st column takes up 2</li>
+                        <li>2nd column takes up 3</li>
+                        <li>3rd column takes up 7</li>
+                    </ul>
+                </li>
+            </ul>
+            <div>
+                Column 1
+            </div>
+            <div>
+                Column 2
+            </div>
+            <div>
+                Column 3
+            </div>
+        </div>
+    </div>
+	<br>
+    <div class="container">
+        <p>9. Modify the container class of the above div so that it will have a width that takes up the entire width of the screen</p>
+        <div class="row">
+            <div class="col">
+                Column 1
+            </div>
+            <div class="col">
+                Column 2
+            </div>
+            <div class="col">
+                Column 3
+            </div>
+        </div>
+    </div>
+	<br>
+    <div>
+        <p>10. Add a container class to the above div that will make the following have a width that takes up the entire width of the screen only up to and including the "medium" breakpoint. Anything including the "large" breakpoint and above will not</p>
+        <div class="row">
+            <div class="col">
+                Column 1
+            </div>
+            <div class="col">
+                Column 2
+            </div>
+            <div class="col">
+                Column 3
+            </div>
+        </div>
+    </div>
+</body>
+</html>
