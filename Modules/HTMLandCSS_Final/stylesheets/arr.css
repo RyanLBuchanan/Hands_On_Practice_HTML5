@@ -2,17 +2,21 @@
   box-sizing: border-box;
 }
 
+.top-social-thumbnails {
+  float: right;
+  padding-left: 5px;
+}
+
 main {
   background-color: #ffffff;
   padding: 0 0 2em 0;
   display: block;
 }
 
-main h2, main h3, main h4, main p, main div {
+/* main h2, main h3, main h4, main p, main div {
   padding-left: 3em;
   padding-right: 2em;
-}
-
+} */
 body {
   background-color: #555555;
   color: #000000;
@@ -41,6 +45,13 @@ h1 {
 h2 {
   align-content: center;
   text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.5em;
+  font-family: Calendas, Times New Roman;
 }
 
 h4 {
@@ -125,31 +136,40 @@ header, nav, main, footer {
   display: block;
 }
 
-table {
-  margin: auto;
-  width: 90%;
-  border-spacing: 0;
-  background-color: none;
+.AFV {
+  text-align: center;
 }
 
-td,
-th {
-  padding: 10px;
+.afv-images {
+  margin-right: 30px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  padding: 0px;
+  border: solid 1px #939799;
+  box-shadow: 10px 10px 10px #DCDCDC;
 }
 
-#saveherpetiles ul {
-  list-style-type: none;
-  display: inline-block;
-}
-
-#saveherpetiles li {
-  display: inline-block;
+#donate-now {
+  width: 600px;
+  display: block;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: normal;
+  background-color: #42731F;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  white-space: nowrap;
+  box-shadow: 10px 10px 10px #DCDCDC;
 }
 
 #newtbackground {
   background-image: url('../images/Arr-Logo-Pattern2.gif');
   background-color: #42731F;
-  height: 270px;
+  height: 290px;
 }
 
 #newtbackground ul {
@@ -159,17 +179,17 @@ th {
 
 .float-container {
   background-image: url('../images/Arr-Logo-Pattern2.gif');
-    padding-top: 20px;
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-top: 20px;
-    align-items: center;
+  padding-top: 20px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 20px;
+  align-items: center;
 }
 
 .float-child {
-    width: 150px;
-    float: left;
-    /* padding: 50px; */
+  width: 150px;
+  float: left;
+  padding: 20px;
 }
 
 #recent-posts {
@@ -190,56 +210,70 @@ th {
   white-space: nowrap;
 }
 
+#recent-posts li:last-child, #upcoming-events li:last-child {
+  font-style: italic;
+}
+
 .double-space {
   line-height: 2;
   position: relative;
   top: -.5em;
 }
 
-.AFV {
-  text-align: center;
-}
-
-.afv-images {
-  margin-right: 30px;
-  margin-bottom: 50px;
-  margin-left: 30px;
-  padding: 0px;
-  border: solid 1px #939799;
-  box-shadow: 10px 10px 10px #DCDCDC;
-}
-
 #saveherpetiles-heading {
   font-size: 40px;
   font-style: normal;
-
 }
 
-.button {
-  border-style: solid #DCDCDC;
-  margin-left: 70px;
-  margin-bottom: 20px;
+#saveherpetiles ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+#saveherpetiles li {
+  text-align: center;
+  display: inline-block;
+}
+
+#donate-circles {
+  text-align: center;
+}
+
+#donate-circles li {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+#donate-rectangles ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+#donate-rectangles li {
+  text-align: center;
+  display: inline-block;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+#donate-rectangles {
+  text-align: center;
+}
+
+table {
+  margin: auto;
+  width: 90%;
+  border-spacing: 0;
+  background-color: none;
+}
+
+td,
+th {
+  padding: 10px;
 }
 
 hr {
   width: 90%;
-}
-
-#donate-now {
-  width: 600px;
-  display: block;
-  color: #ffffff;
-  font-size: 40px;
-  font-weight: normal;
-  background-color: #42731F;
-  margin-right: auto;
-  margin-bottom: 50px;
-  margin-left: auto;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  white-space: nowrap;
-  box-shadow: 10px 10px 10px #DCDCDC;
 }
 
 #footer-nav {
@@ -247,11 +281,6 @@ hr {
   padding-left: 2em;
   padding-right: 2em;
   margin-top: 50px;
-}
-
-.top-social-thumbnails {
-  float: right;
-  padding-left: 5px;
 }
 
 /** RESPONSIVENESS **/
