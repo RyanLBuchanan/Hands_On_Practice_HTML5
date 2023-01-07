@@ -231,7 +231,9 @@ header, nav, main, footer {
 
 #saveherpetiles-heading {
   font-size: 40px;
-  font-style: normal;
+  font-style: bold;
+  font-family:  Verdana, Helvetica;
+  font-weight: lighter;
 }
 
 #saveherpetiles ul {
