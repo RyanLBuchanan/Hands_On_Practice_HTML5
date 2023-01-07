@@ -1,3 +1,8 @@
+@font-face {
+  font-family: MyAwesomeFont;
+  src: url("https://www.dafontfree.co/calendas-plus-font/") format("calendas");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -13,10 +18,6 @@ main {
   display: block;
 }
 
-/* main h2, main h3, main h4, main p, main div {
-  padding-left: 3em;
-  padding-right: 2em;
-} */
 body {
   background-color: #555555;
   color: #000000;
@@ -38,7 +39,7 @@ p {
 h1 {
   margin-bottom: 0px;
   font-size: 3em;
-  font-family: Calendas, "Times New Roman";
+  font-family: "MyAwesomeFont", "Calendas", "Times New Roman";
   text-align: center;
 }
 
@@ -51,7 +52,7 @@ h3 {
   text-align: center;
   font-style: italic;
   font-size: 1.5em;
-  font-family: Calendas, "Times New Roman";
+  font-family: "MyAwesomeFont", "Calendas", "Times New Roman";
 }
 
 h4 {
@@ -61,7 +62,7 @@ h4 {
   padding-bottom: 0;
   text-transform: uppercase;
   clear: left;
-  font-family: Calendas, "Times New Roman";
+  font-family: "MyAwesomeFont", "Calendas", "Times New Roman";
 }
 
 nav {
@@ -99,7 +100,6 @@ nav li {
 nav a {
   text-decoration: none;
   width: auto;
-  /** THIS is correct **/
   display: block;
   text-decoration: none;
 }
@@ -283,7 +283,6 @@ hr {
   margin-top: 50px;
 }
 
-/** RESPONSIVENESS **/
 #mobile {
   display: none;
 }
@@ -333,7 +332,7 @@ footer {
 }
 
 #myBtn:hover {
-  background-color: #42731F; /* Add a dark-grey background on hover */
+  background-color: #42731F; 
 }
 
 /* @media only screen and (max-width: 1024px) {
