@@ -1,6 +1,11 @@
 @font-face {
   font-family: MyAwesomeFont;
-  src: url("https://www.dafontfree.co/calendas-plus-font/") format("calendas");
+  src: url("..https://www.dafontfree.co/calendas-plus-font/") format("Calendas");
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
 }
 
 * {
@@ -193,21 +198,23 @@ header, nav, main, footer {
 }
 
 #recent-posts {
+  color: #555555;
   float: left;
   background-color: #ffffff;
-  width: 330px;
+  width: 350px;
   padding: 0px;
   border-radius: 15px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 #upcoming-events {
+  color: #555555;
   float: right;
   background-color: #ffffff;
   width: 350px;
   padding: 0px;
   border-radius: 15px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 #recent-posts li:last-child, #upcoming-events li:last-child {
@@ -332,7 +339,7 @@ footer {
 }
 
 #myBtn:hover {
-  background-color: #42731F; 
+  background-color: #42731F;
 }
 
 /* @media only screen and (max-width: 1024px) {
