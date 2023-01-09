@@ -71,7 +71,7 @@ h4 {
 }
 
 nav {
-  width: auto;
+  width: 100%;
   height: 122px;
   background: #D7D7D7;
   overflow: auto;
@@ -90,6 +90,9 @@ nav {
 
 nav ul {
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
 }
 
 nav li {
